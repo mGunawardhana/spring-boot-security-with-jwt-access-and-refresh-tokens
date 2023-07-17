@@ -25,5 +25,6 @@ public class User {
     private String username;
     private String password;
     @ManyToAny(fetch = FetchType.EAGER)
-    private final Collection<Role> roles = new ArrayList<>();
+    private Collection<Role> roles = new ArrayList<>();
+
 }
