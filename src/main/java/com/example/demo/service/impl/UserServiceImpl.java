@@ -5,17 +5,18 @@ import com.example.demo.domain.User;
 import com.example.demo.repo.RoleRepo;
 import com.example.demo.repo.UserRepo;
 import com.example.demo.service.UserService;
-import jakarta.transaction.Transactional;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
 
+
+import javax.transaction.Transactional;
 import java.util.List;
 /**
  * @developed-by : mGunawardhana
  * @contact : 071-9043372
  */
-@Service
+
 @RequiredArgsConstructor
 @Transactional
 @Slf4j
