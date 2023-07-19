@@ -4,7 +4,6 @@ import com.example.demo.domain.Role;
 import com.example.demo.domain.User;
 import org.springframework.stereotype.Service;
 
-
 import java.util.List;
 
 /**
