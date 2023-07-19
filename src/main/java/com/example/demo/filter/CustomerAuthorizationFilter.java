@@ -30,9 +30,9 @@ import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 public class CustomerAuthorizationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        if (request.getServletPath().equals("/api/login")) {
+        if (request.getServletPath().equals("/api/login") || request.getServletPath().equals("/api/token/refresh")) {
             filterChain.doFilter(request, response);
-        } else {
+        } else{
             String authorizationHeader = request.getHeader(AUTHORIZATION);
             if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
                 try {
@@ -40,14 +40,23 @@ public class CustomerAuthorizationFilter extends OncePerRequestFilter {
                     Algorithm algorithm = Algorithm.HMAC256("secret".getBytes());
                     JWTVerifier verifier = JWT.require(algorithm).build();
                     DecodedJWT decodedJWT = verifier.verify(token);
+
                     String username = decodedJWT.getSubject();
+
                     String[] roles = decodedJWT.getClaim("roles").asArray(String.class);
+
                     Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
+
                     stream(roles).forEach(role -> {
+
                         authorities.add(new SimpleGrantedAuthority(role));
+
                     });
+
                     UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(username, null, authorities);
+
                     SecurityContextHolder.getContext().setAuthentication(authenticationToken);
+
                     filterChain.doFilter(request, response);
 
                 } catch (Exception exception) {
