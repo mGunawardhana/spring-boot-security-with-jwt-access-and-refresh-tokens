@@ -1,0 +1,221 @@
+repo_name: mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens
+report_id: 82936bc1d86fc1bee9fec9c5725a60a4
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-17T14:03:57+00:00'
+requested_by: mGunawardhana
+provider: github
+branch: master
+detected_tools_count: 16
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens
+  detection_source: Repo Metadata
+- name: Spring Framework
+  description: An application framework and inversion of control container for the
+    Java platform
+  website_url: https://spring.io/projects/spring-framework
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/2006/spring-framework-project-logo.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
+- name: MySQL
+  description: The world's most popular open source database
+  website_url: http://www.mysql.com
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/1025/logo-mysql-170x170.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-17 06:19:57.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens
+  detection_source: Repo Metadata
+- name: Apache Camel
+  description: A versatile open source integration framework
+  website_url: https://camel.apache.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Platform as a Service
+  image_url: https://img.stackshare.io/service/3276/xWt1RFo6_400x400.jpg
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/src/main/resources/application.properties
+  detection_source: src/main/resources/application.properties
+  last_updated_by: unknown
+  last_updated_on: 2023-07-17 08:08:39.000000000 Z
+- name: com.auth0:java-jwt
+  description: Java implementation of JSON Web Token
+  version: 4.4.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
+- name: javax.persistence:javax.persistence-api
+  description: Java
+  version: '2.2'
+  license: EPL-1.0,AAL
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
+- name: mysql:mysql-connector-java
+  description: MySQL JDBC Type 4 driver
+  version: 8.0.25
+  license: GPL-3.0-only
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
+  vulnerabilities:
+  - name: Incorrect Authorization in MySQL Connector Java
+    cve_id: CVE-2021-2471
+    cve_url: https://github.com/advisories/GHSA-w6f2-8wx4-47r5
+    detected_date: Jun 23
+    severity: moderate
+    first_patched: 8.0.27
+  - name: Improper Handling of Insufficient Permissions or Privileges in MySQL Connectors
+      Java
+    cve_id: CVE-2022-21363
+    cve_url: https://github.com/advisories/GHSA-g76j-4cxx-23h9
+    detected_date: Jun 21
+    severity: moderate
+    first_patched: 8.0.28
+- name: org.projectlombok:lombok
+  description: 'Spice up your java: Automatic Resource Management'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
+- name: org.springframework.boot:spring-boot-devtools
+  description: Spring Boot Developer Tools
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-data-jpa
+  description: Starter for using Spring Data JPA with Hibernate
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-security
+  description: Starter for using Spring Security
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-test
+  description: Starter for testing Spring Boot applications with libraries including
+    JUnit
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-web
+  description: Starter for building web, including RESTful, applications using Spring
+    MVC
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
+- name: org.springframework.security:spring-security-test
+  description: Spring-security-test
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
+- name: org.springframework:spring-core
+  description: Spring Core
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/mGunawardhana/spring-boot-security-with-jwt-access-and-refresh-tokens/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: unknown
+  last_updated_on: 2023-07-18 13:10:42.000000000 Z
